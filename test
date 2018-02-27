@@ -5,6 +5,12 @@ pipeline {
             steps {
                 echo 'Hello world!'
             }
+
+        }
+        stage('Stage 2') {
+            stops {
+                java -version
+            }
         }
     }
 }
